@@ -7,8 +7,8 @@
             <span>{{WEATHER.coord.lon}}</span>
         </div>
         <div class="weather__main">
-            <span>Ощущения: {{WEATHER.main.feels_like | filterDegees}} C°</span>
-            <span>Давление: {{WEATHER.main.pressure}}</span>
+            <span>Ощущается как: {{WEATHER.main.feels_like | filterDegees}} C°</span>
+            <span>Давление: {{WEATHER.main.pressure}} Pa</span>
             <span>Температура: {{WEATHER.main.temp | filterDegees}} C°</span>
             <span>Максимальная Температура: {{WEATHER.main.temp_max | filterDegees}} C°</span>
             <span>Минимальная Температура: {{WEATHER.main.temp_min | filterDegees}} C°</span>
@@ -48,7 +48,7 @@ export default{
 <style lang="scss">
 .weather{
     width: 420px;
-    height: 500px;
+    height: 420px;
     position: absolute;
     top: 50%;
     left: 50%;
